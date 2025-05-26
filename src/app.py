@@ -149,7 +149,7 @@ def get_summary(stat_slctd, age_slctd, rec_slctd):
                      "Reference":'Sources'
                  }
              ,color_discrete_sequence=px.colors.qualitative.Prism
-             ,category_orders={"Immigration Assignment": ["Withholding of Removal", "Temporary Protected Status", "Deportation", "Unknown"]}
+             ,category_orders={"Immigration Assignment": ["Withholding of Removal", "Temporary Protected Status", "Deportation", "Pending", "Unknown"]}
             )
     customdata = np.stack((dff['Full Name'], dff['Age at Deportation'], dff['Immigration Status'], dff['Criminal Record'], dff['Reference']), axis=-1)
 
